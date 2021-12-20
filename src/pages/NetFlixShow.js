@@ -1,4 +1,4 @@
-import React from "react"
+import React from "react";
 
 function NetFlixShow() {
     return (
@@ -6,6 +6,6 @@ function NetFlixShow() {
             <h2>NetFlix Show</h2>
         </div>
     );
-}
+};
 
 export default NetFlixShow;
