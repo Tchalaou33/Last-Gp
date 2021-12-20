@@ -6,13 +6,13 @@ const Header = () => {
     return (
         <header className="showcase">
             <div className="showcase-top"> 
-                <img src="https://i.bb.co/r5krrdz/logo.png" alt="logo" />
+                <img src="https://i.ibb.co/r5krrdz/logo.png" alt="logo" />
                 <Link to="/" className="btn btn-rounded">
                     Sign In
                 </Link>
             </div>
             <div className="showcase-content">
-                <h1>Unlimited moview, Tv shows and more</h1>
+                <h1>Unlimited movies, Tv shows and more</h1>
                 <p>Watch anywhere. Cancel Anytime</p>
                 <Link to="/netflix-show" className="btn btn-xl">
                     Watch Free For 30 Days

@@ -1,5 +1,6 @@
 import React from "react";
-import {BrowserRouter, Switch, Route} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
+// Switch-add back to rounter-DOM
 import "./App.css";
 import Home from "./pages/Home";
 import NetFlixShow from "./pages/NetFlixShow";
@@ -15,6 +16,6 @@ function App() {
     
     </BrowserRouter>
   );
-}
+};
 
 export default App;
