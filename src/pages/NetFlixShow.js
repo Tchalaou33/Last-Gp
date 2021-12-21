@@ -1,10 +1,17 @@
 import React from "react";
+import Row from "../components/Row/Row";
+import api from "../api/api";
 
 
-function NetFlixShow() {
+const NetFlixShow = () => {
     return (
         <div>
-            <h2>NetFlix Show</h2>
+            {/* {Nav} */}
+            {/* {Banner} */}
+            <Row title="NETFLIX ORIGINALS" fetchUrl={api.NetflixOriginals} isLargeRow/>
+            <Row title="Trending Now" fetchUrl={api.fetchTrending} />
+            <Row title="Top Rated" fetchUrl={api.fetchTopRated} />
+            <Row title="Romance Movies" fetchUrl={api.fetchRomanceMovies} />
         </div>
     );
 };
