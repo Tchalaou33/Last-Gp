@@ -1,19 +1,21 @@
 import React from "react";
-import {BrowserRouter, Route} from "react-router-dom";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 // Switch-add back to rounter-DOM
 import "./App.css";
 import Home from "./pages/Home";
 import NetFlixShow from "./pages/NetFlixShow";
 
 
-function App() {
+const App = () => {
   return (
     <BrowserRouter>
-    <div className="App">
-      <Route exact path="/" component={Home} />
-      <Route path="/netflix-show" component={NetFlixShow} />
-    </div>
     
+    {/* <div className="App"> */}
+      <Routes>
+        <Route exact path="/" element={<Home/>} />
+        <Route path="/netflix-show" element={<NetFlixShow/>} />
+      </Routes>
+    {/* </div> */}
     </BrowserRouter>
   );
 };
