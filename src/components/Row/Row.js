@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
+import "./Row.css";
 import axios from "axios";
+
 
 const base_url = "https://image.tmdb.org/t/p/original";
 
@@ -18,10 +20,24 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
         fetchData();
     }, []);
 
-    console.log("movies", movies);
+    // console.log("movies", movies);
+
+    const handleClick = () => {}
+
     return (
-        <div>
-            <h2>Row</h2>
+        <div className="row">
+            <h2>{title}</h2>
+            <div className="row-posters">
+                {movies && movies.map((movie) => (
+                    <img
+                    onClick={() => handleClick(movie)}
+                    key={movie.id}
+                    className={`row-poster ${isLargeRow && "row-posterLarge"}`}
+                    src={`${base_url}${isLargeRow ? movie.poster_path : movie.backdrop_path}`}
+                    alt={movie.name}
+                />
+                ))}
+            </div>
         </div>
     );
 };
