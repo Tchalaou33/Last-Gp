@@ -5,12 +5,25 @@ import "./Banner.css";
 
 
 const Banner = () => {
-    const [movie, setMovie] = useSate([])
+    const [movie, setMovie] = useSate([]);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const response = await axios.get(`${process.env.REACT_APP_API}${api.fetchNetflixOriginals}`
+            );
+            setMovie(
+                response.data.results[
+                    Math.floor(Math.random() * response.data.results.length - 1)
+                ]
+            );
+        };
+    });
+
     return (
         <div>
             
         </div>
-    )
-}
+    );
+};
 
-export default Banner
+export default Banner;

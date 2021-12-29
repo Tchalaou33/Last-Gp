@@ -10,11 +10,11 @@ const Row = ({title, fetchUrl, isLargeRow}) => {
 
     useEffect(() =>{
         const fetchData = async () => {
-            const request = await axios.get(
+            const response = await axios.get(
                 `${process.env.REACT_APP_API}${fetchUrl}`
                 );
-            setMovies(request.data.results);
-            return request
+            setMovies(response.data.results);
+            return response
             
         };
 
