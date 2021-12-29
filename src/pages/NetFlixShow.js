@@ -10,7 +10,7 @@ const NetFlixShow = () => {
         <div>
             {/* {Nav} */}
             {/* {Banner} */}
-            <Row title="NETFLIX ORIGINALS" fetchUrl={api.NetflixOriginals} isLargeRow/>
+            <Row title="NETFLIX ORIGINALS" fetchUrl={api.fetchNetflixOriginals} isLargeRow />
             <Row title="Trending Now" fetchUrl={api.fetchTrending} />
             <Row title="Top Rated" fetchUrl={api.fetchTopRated} />
             <Row title="Action Movies" fetchUrl={api.fetchActionMovies} />
