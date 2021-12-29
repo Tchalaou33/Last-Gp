@@ -111,6 +111,9 @@ img {
 
 .btn-rounded {
   border-radius: 5px;
+  background: #e50914;
+  color: #fff;
+  padding: 0.4rem 1.3rem;
 }
 
 .btn-xl {
