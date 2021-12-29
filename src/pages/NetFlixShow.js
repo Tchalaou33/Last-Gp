@@ -1,7 +1,7 @@
 import React from "react";
 import Row from "../components/Row/Row";
 import api from "../api/api";
-// import NetFlixShow from "./pages/NetFlixShow";
+import Banner from "../components/Banner/Banner";
 
 
 
@@ -9,7 +9,7 @@ const NetFlixShow = () => {
     return (
         <div>
             {/* {Nav} */}
-            {/* {Banner} */}
+            <Banner/>
             <Row title="NETFLIX ORIGINALS" fetchUrl={api.fetchNetflixOriginals} isLargeRow />
             <Row title="Trending Now" fetchUrl={api.fetchTrending} />
             <Row title="Top Rated" fetchUrl={api.fetchTopRated} />
