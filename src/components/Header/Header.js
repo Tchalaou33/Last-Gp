@@ -7,7 +7,7 @@ const Header = () => {
         <header className="showcase">
             <div className="showcase-top"> 
                 <img src="https://i.ibb.co/r5krrdz/logo.png" alt="logo" />
-                <Link to="/" className="btn btn-rounded">
+                <Link to="/sign-show" className="btn btn-rounded">
                     Sign In
                 </Link>
             </div>
