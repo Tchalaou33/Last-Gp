@@ -4,14 +4,22 @@ import "./App.css";
 import Signin from "./components/Signin/Signin";
 import Home from "./pages/Home";
 import NetFlixShow from "./pages/NetFlixShow";
+import {useSelector} from "react-redux";
+import { selectUser } from "./features/userSlice";
+
 
 
 
 const App = () => {
+  const user = useSelector(selectUser);
+  //  const dispatch = useDispatch();
 
   return (
-    <Router>
     
+    <Router>
+      <div> {user ? <NetFlixShow /> : <Home />} </div>;
+
+  
     <div className="App">
       
         <Routes>
