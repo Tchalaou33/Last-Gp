@@ -2,6 +2,7 @@ import React from "react";
 import Row from "../components/Row/Row";
 import api from "../api/api";
 import Banner from "../components/Banner/Banner";
+// import MMovies from "../components/My_Movies/MMovies";
 
 
 
@@ -10,6 +11,7 @@ const NetFlixShow = () => {
         <div>
             {/* {Nav} */}
             <Banner/>
+            {/* <My Movies/> */}
             <Row title="NETFLIX ORIGINALS" fetchUrl={api.fetchNetflixOriginals} isLargeRow />
             <Row title="Trending Now" fetchUrl={api.fetchTrending} />
             <Row title="Top Rated" fetchUrl={api.fetchTopRated} />

@@ -18,6 +18,7 @@ const App = () => {
     
     <Router>
       <div> {user ? <NetFlixShow /> : <Home />} </div>;
+      {/* how to implament user signed_in here */}
 
   
     <div className="App">
